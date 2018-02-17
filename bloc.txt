@@ -1,0 +1,7 @@
+id pour chaques musiques 
+
+changer format musique pour raison de sécurité 
+
+https://www.ffmpeg.org/documentation.html
+
+id playlist lié a plusieurs morceaux 

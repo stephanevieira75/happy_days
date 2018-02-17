@@ -1,0 +1,36 @@
+bdd: happy_days
+
+tables :
+
+// TABLE DES MEMBRES
+membres: 
+id_membre; PK AI;
+email; VARCHAR 125
+password; VARCHAR 255
+
+
+music:
+
+// TABLE DES MUSIQUES
+id_music; PK AI;
+titre; VARCHAR 200
+auteur; VARCHAR 200
+album; VARCHAR 200
+taille; INT 11
+
+
+playlist:
+
+// TABLE DES PLAYLISTS
+id_playlist; PK AI;
+titre; VARCHAR 200
+image; VARCHAR 200
+taille; INT 11
+id_membre; INT 11
+
+
+playlist_music:
+
+// TABLE D'ASSOCIATION MUSIC A PLAYLISTS
+id_playlist; INT 11
+id_music; INT 11

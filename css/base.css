@@ -1,0 +1,73 @@
+
+/*
+<div class="wave-container">
+    <div class="wave -one"></div>
+    <div class="wave -two"></div>
+    <div class="wave -three"></div>
+</div>
+
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,700");
+body {
+    margin: 0;
+    background-color: gray; /*  rose : #F2D7D3  / #9768D1*/
+    font-family: 'Oswald', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1rem;
+    overflow: hidden;
+    width: 100vw;
+  }
+
+.wave-container {
+    width: 300vw;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+  /* VAGUE DE DROITE */
+  .wave {
+    opacity: 1;
+    position: absolute;
+    top: 60%;
+    left: -28%;
+    background: red; /* vert : #18DFAD //  #7B52AB  */
+    width: 100%;
+    height: 300vw;
+    transform-origin: 50% 49%;
+    border-radius: 49%;
+    -webkit-animation: drift 3000ms infinite linear;
+    animation: drift 8000ms infinite linear;
+    will-change: transform;
+  }
+  /* VAGUE DU BAS  */
+  .wave.-two {
+    animation: drift 9000ms infinite linear;
+    opacity: 1;
+    background: #25064C; /* bleu : #33476a // #25064C */
+    top: 60%;
+    left: -32%;
+  }
+  /* VAGUE DE GAUCHE */
+  .wave.-three {
+    animation: drift 4000ms infinite linear;
+    opacity: 1;
+    background: yellow; /* rouge : #F12645  // #553285*/
+    top: 60%;
+    left: -36%;
+    z-index: -2;
+  }
+  @keyframes drift {
+    from {
+      transform: rotate(0deg);
+    }
+    from {
+      transform: rotate(360deg);
+    }
+  }
+
+
+ 
+  

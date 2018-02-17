@@ -1,0 +1,19 @@
+about.php =  page de renseignement du site (en construction)
+
+charte.php = page de la charte a accepter lors de l'inscription (en construction 0%)
+
+contact.php = page de contact (en construction 0%)
+
+dashboard.php = page principale du site regroupant le player et les playlists (en construction 50%)
+
+form_music.php = page formulaire pour ajouter/modifier des musiques (en construction 0%)
+
+form_playlist.php = page formulaire pour ajouter/modifier des playlists (en construction 0%)
+
+index.php = page de connexion de l'utilisateur (en construction 50%)
+
+inscription.php = page d'inscription pour l'utilisateur (en construction 50%)
+
+music_table.php = page d'affichage des musiques et appartenances sous forme de table (en construction 40%)
+
+playlist_table.php = page d'affichage des playlists et  tailles sous forme de table (en construction 40%)

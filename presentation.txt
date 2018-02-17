@@ -1,0 +1,83 @@
+﻿                                                                                                                                          
+88        88                                                88888888ba,                                    88  
+88        88                                                88      `"8b                                   88  
+88        88                                                88        `8b                                  88  
+88aaaaaaaa88 ,adPPYYba, 8b,dPPYba,  8b,dPPYba,  8b       d8 88         88 ,adPPYYba, 8b       d8 ,adPPYba, 88  
+88""""""""88 ""     `Y8 88P'    "8a 88P'    "8a `8b     d8' 88         88 ""     `Y8 `8b     d8' I8[    "" 88  
+88        88 ,adPPPPP88 88       d8 88       d8  `8b   d8'  88         8P ,adPPPPP88  `8b   d8'   `"Y8ba,  ""  
+88        88 88,    ,88 88b,   ,a8" 88b,   ,a8"   `8b,d8'   88      .a8P  88,    ,88   `8b,d8'   aa    ]8I aa  
+88        88 `"8bbdP"Y8 88`YbbdP"'  88`YbbdP"'      Y88'    88888888Y"'   `"8bbdP"Y8     Y88'    `"YbbdP"' 88  
+                        88          88              d8'                                  d8'                   
+                        88          88             d8'                                  d8'                    
+
+lien : http://www.happydays-music.fr/
+
+Présentation : 
+
+Happydays est un site permettant aux utilisateurs connectés de pouvoir écouter de la musique (uploadée au préalable par l'utilisateur) 
+via un player intégré sur le site.
+
+Le site comprend plusieurs pages ainsi qu'une base de donnée. 
+
+l- la structuration du site : 
+    // Connexion
+    - une page d'inscription pour l'utilisateur (inscription.php)
+    - une page de connexion pour l'utilisateur (index.php)
+
+    // Player
+    - une page principale du site regroupant le player et les playlists (dashboard.php)
+    
+    // Fonctionnalité
+
+    - une page d'affichage des playlists et  tailles sous forme de table (playlist_table.php)
+        - une page formulaire pour ajouter/modifier des playlists (form_playlist.php)
+
+
+    - une page d'affichage des musiques et appartenances sous forme de table (music_table.php)
+        - une page formulaire pour ajouter/modifier des musiques (form_music.php)
+
+    // Contact
+
+    - une page de la charte à accepter lors de l'inscription (charte.php)
+    - une page de renseignement du site (about.php)
+    - une page de contact comprenant un formulaire ect.. (contact.php)
+
+2- Base de donnée :
+
+bdd: happy_days
+
+Tables :
+
+// TABLE DES MEMBRES
+membres: 
+
+id_membre; PK AI;
+email; VARCHAR 125
+password; VARCHAR 255
+
+
+// TABLE DES MUSIQUES
+music:
+
+id_music; PK AI;
+titre; VARCHAR 200
+auteur; VARCHAR 200
+album; VARCHAR 200
+taille; INT 11
+
+
+// TABLE DES PLAYLISTS
+playlist:
+
+id_playlist; PK AI;
+titre; VARCHAR 200
+image; VARCHAR 200
+taille; INT 11
+id_membre; INT 11
+
+
+// TABLE D'ASSOCIATION MUSIC A PLAYLISTS
+playlist_music:
+
+id_playlist; INT 11
+id_music; INT 11
