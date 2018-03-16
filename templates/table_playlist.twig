@@ -1,0 +1,144 @@
+{% extends 'layout.twig'%}
+{% block title %}
+<title>Gérez vos playlists !</title>
+{% endblock %}
+{% block stylesheet %}
+<link rel="stylesheet" href="../happy_days_twig/css/table_playlist.css">
+{% endblock %}
+
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h1>Gérez vos playlists
+  <small>Keep this way bruh...</small>
+</h1>
+
+  <div class="container">
+    <div class="row">
+    <p></p>
+    <p></p>
+  
+        <div class="col-md-10 col-md-offset-1">
+
+            <div class="panel panel-default panel-table">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col col-xs-6">
+                    <h3 class="panel-title">Panneau de configuration</h3>
+                  </div>
+                  <div class="col col-xs-6 text-right">
+
+                  
+                    <button type="button" class="btn btn-sm btn-primary btn-create" onclick="location.href='?p=form_playlist';" >Créer une nouvelle playlist</button>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-body">
+                <table class="table table-striped table-bordered table-list">
+                  <thead>
+                    <tr>
+                        <th><em class="fa fa-cog"></em></th>
+                        <th class="hidden-xs">Id</th>
+                        <th class="col-md-2">Playlist</th>
+                        <th class="col-md-2">Image</th>
+                        <th class="hidden-xs">Taille</th>
+                    </tr> 
+                  </thead>
+                  <tbody>
+                          <tr>
+                            <td align="center">
+                              <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
+                              <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                            </td>
+                            <td class="hidden-xs">1</td>
+                            <td class="col-md-2">La first playlist</td>
+                            <td class="col-md-2"><img src="img/logo-mobile.png" alt="photo de la playlist" height="40" width="50"></td>
+                            <td class="hidden-xs">1go</td>
+                            
+                          </tr>
+                          <tr>
+                            <td align="center">
+                              <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
+                              <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                            </td>
+                            <td class="hidden-xs">1</td>
+                            <td class="col-md-2">La second playlist</td>
+                            <td class="col-md-2"><img src="img/logo-mobile-2.png" alt="photo de la playlist" height="40" width="50"></td>
+                            <td class="hidden-xs">50mb</td>
+                            
+                            
+                          </tr>
+                          <tr>
+                            <td align="center">
+                              <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
+                              <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                            </td>
+                            <td class="hidden-xs">1</td>
+                            <td class="col-md-2">Playlist d'amour</td>
+                            <td class="col-md-2"><img src="img/logo-mobile-5.png" alt="photo de la playlist" height="40" width="50"></td>
+                            <td class="hidden-xs">160mb</td>
+                            
+                            
+                          </tr>
+                          <tr>
+                            <td align="center">
+                              <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
+                              <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                            </td>
+                            <td class="hidden-xs">1</td>
+                            <td class="col-md-2">Playlist 2018</td>
+                            <td class="col-md-2"><img src="img/logo-mobile-3.png" alt="photo de la playlist" height="40" width="50"></td>
+                            <td class="hidden-xs">6go</td>
+                            
+                            
+                          </tr>
+                          <tr>
+                            <td align="center">
+                              <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
+                              <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                            </td>
+                            <td class="hidden-xs">1</td>
+                            <td class="col-md-2">Playlist de fin</td>
+                            <td class="col-md-2"><img src="img/logo-mobile-4.png" alt="photo de la playlist" height="40" width="50"></td>
+                            <td class="hidden-xs">Vide</td>
+                            
+                            
+                          </tr>
+                        </tbody>
+                </table>
+            
+              </div>
+              <div class="panel-footer">
+                <div class="row">
+                  <div class="col col-xs-4">Page 1 à 5
+                  </div>
+                  <div class="col col-xs-8">
+                    <ul class="pagination hidden-xs pull-right">
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                    </ul>
+                    <ul class="pagination visible-xs pull-right">
+                        <li><a href="#">«</a></li>
+                        <li><a href="#">»</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+</div>
+</div>
+</div>
+
+</body>
+
+</html>
+
+{% endblock %}

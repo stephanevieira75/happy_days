@@ -1,0 +1,145 @@
+{% extends 'layout.twig'%}
+{% block title %}
+<title>Ajoutez tes musiques !</title>
+{% endblock %}
+{% block stylesheet %}
+<link rel="stylesheet" href="../happy_days_twig/css/table_playlist.css">
+{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<div class="wave-container">
+    <div class="wave -one"></div>
+    <div class="wave -two"></div>
+    <div class="wave -three"></div>
+</div>
+<h1>Ajoute tes musiques !
+  <small>2 easy...</small>
+</h1>
+  <div class="container">
+    <div class="row">
+    <p></p>
+
+  
+<p> </p>
+    
+        <div class="col-md-10 col-md-offset-1">
+
+            <div class="panel panel-default panel-table">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col col-xs-6">
+                    <h3 class="panel-title">Panneau de configuration</h3>
+                  </div>
+                  <div class="col col-xs-6 text-right">
+                    <button type="button" class="btn btn-sm btn-primary btn-create" onclick="location.href='?p=form_music';">Ajouter une musique</button>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-body">
+                <table class="table table-striped table-bordered table-list">
+                  <thead>
+                    <tr>
+                        <th><em class="fa fa-cog"></em></th>
+                        <th class="hidden-xs">Playlist</th>
+                        <th class="hidden-xs">Auteur</th>
+                        <th class="hidden-xs">Titre</th>
+                        <th class="hidden-xs">Album</th>
+                    </tr> 
+                  </thead>
+                  <tbody>
+                          <tr>
+                            <td align="center">
+                              <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
+                              <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                            </td>
+                            <td class="hidden-xs">La first playlist</td>
+                            <td class="hidden-xs">Johnny Halliday</td>
+                            <td class="hidden-xs">Allumez le feu !</td>
+                            <td class="hidden-xs">Album</td>
+                            
+                          </tr>
+                          <tr>
+                            <td align="center">
+                              <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
+                              <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                            </td>
+                            <td class="hidden-xs">la second playlist</td>
+                            <td class="hidden-xs">Lil peep</td>
+                            <td class="hidden-xs">my song</td>
+                            <td class="hidden-xs">rip</td>
+                            
+                            
+                          </tr>
+                          <tr>
+                            <td align="center">
+                              <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
+                              <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                            </td>
+                            <td class="hidden-xs">Playlist d'amour</td>
+                            <td class="hidden-xs">Gucci mane</td>
+                            <td class="hidden-xs">Pillz</td>
+                            <td class="hidden-xs">Jeez</td>
+                            
+                            
+                          </tr>
+                          <tr>
+                            <td align="center">
+                              <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
+                              <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                            </td>
+                            <td class="hidden-xs">Playlist 2018</td>
+                            <td class="hidden-xs">Kygo</td>
+                            <td class="hidden-xs">where are you now</td>
+                            <td class="hidden-xs">Flawless</td>
+                            
+                            
+                          </tr>
+                          <tr>
+                            <td align="center">
+                              <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
+                              <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                            </td>
+                            <td class="hidden-xs">Playlist de fin</td>
+                            <td class="hidden-xs">Coolkid</td>
+                            <td class="hidden-xs">Make the beat</td>
+                            <td class="hidden-xs">OuuuhYeah</td>
+                            
+                            
+                          </tr>
+                        </tbody>
+                </table>
+            
+              </div>
+              <div class="panel-footer">
+                <div class="row">
+                  <div class="col col-xs-4">Page 1 à 5
+                  </div>
+                  <div class="col col-xs-8">
+                    <ul class="pagination hidden-xs pull-right">
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                    </ul>
+                    <ul class="pagination visible-xs pull-right">
+                        <li><a href="#">«</a></li>
+                        <li><a href="#">»</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+</div>
+</div>
+</div>
+ 
+</body>
+</html>
+{% endblock %}

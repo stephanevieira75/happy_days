@@ -1,0 +1,61 @@
+
+{% extends 'layout.twig' %}
+{% block title %}
+  <title>Subscribe</title>
+{% endblock %}
+{% block stylesheet %}
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../happy_days_twig/css/subscribe.css">
+{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+    <body> 
+        <div class="back"></div>
+        <div class="registration-form">
+
+  <!--Header -->
+            <header>
+                <h1>Rejoins-nous !</h1>
+                <p>Ou connecte toi <a href="?p=login">Ici!</a></p>
+            </header>
+
+            <!--formulaire connexion -->
+            <form action="#" method="post">
+
+            <!-- input email -->
+                <div class="input-section email-section">
+                
+                    <input name = "" class="email" type="email" placeholder="Ton adresse email ?" autocomplete="off"/>
+                    <div class="animated-button"><span class="icon-paper-plane"><i class="fa fa-envelope-o"></i></span><span class="next-button email"><i class="fa fa-arrow-up"></i></span></div>
+               
+                
+                
+                </div>
+
+            <!-- input password --> 
+                <div class="input-section password-section folded">
+                    <input name = "password" class="password" type="password" placeholder="Un mot de passe ?"/>
+                    <div class="animated-button"><span class="icon-lock"><i class="fa fa-lock"></i></span><span class="next-button password"><i class="fa fa-arrow-up"></i></span></div>
+                </div>
+
+            <!-- input verif-password -->
+                <div class="input-section repeat-password-section folded">
+                    <input name = "password" class="repeat-password" type="password" placeholder="Confirme le mot de passe !"/>
+                    <div class="animated-button"><span class="icon-repeat-lock"><i class="fa fa-lock"></i></span><span class="next-button repeat-password"><i class="fa fa-paper-plane"></i></span></div>
+                </div>
+
+            <!-- Sucess ! -->
+                <div class="success"> 
+                    <p><a href="?p=home">Welcome!</a></p>
+                </div>
+            </form>
+        </div>
+
+        {% block javascript %}
+            <script src="../happy_days_twig/js/subscribe.js"></script>
+        {% endblock %}
+    </body>
+</html>
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends 'layout.twig'%}
+{% block title %}
+<title>Ajoute tes musiques !</title>
+{% endblock %}
+{% block stylesheet %}
+<link rel="stylesheet" href="../happy_days_twig/css/form_playlist.css">
+{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Ajouter une playlist
+            <small>Keep this way bruh...</small>
+        </h1>
+        <section class="contact-wrap">
+            <form method="post" action="" class="contact-form">
+                
+                <div class="col-sm-12">
+                    <div class="input-block">
+                        <input placeholder="Titre playlist"type="text" class="form-control">
+                    </div>
+
+                    <div class="input-block">
+                        <label for="file">Photo:</label>
+                        <br>
+                        <input name="file" id="file"type="file" class="form-control">
+                    </div>
+
+                    <div class="input-block">
+                        <input placeholder="Titre playlist"type="text" class="form-control">
+                    </div>
+
+                    <div class="col-sm-12">
+                    <div class="input-block">
+                        <label for="taille">Taille alloué:</label>
+                        <select class="form-control" name="taille" id="taille">
+                            <option value="5Go" placeholder="">5Go</option>
+                            <option value="10Go" placeholder="">10Go</option>
+                            <option value="15Go" placeholder="">15Go</option>
+                            <option value="20Go" placeholder="">20Go</option>
+                            <option value="25Go" placeholder="">25Go</option>
+
+                        </select>
+                        </div>
+                    <br>
+                </div>
+               
+                </div>
+
+                <div class="col-sm-12">
+                    <button href="?p=home" class="square-button">Ajouter</button>
+                </div>
+
+            </form>
+        </section>
+
+        {% block javascript %}
+            <script src="../happy_days_twig/js/form_playlist.js"></script>
+        {% endblock %}
+    </body>
+</html>
+
+{% endblock %}

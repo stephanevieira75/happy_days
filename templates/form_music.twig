@@ -1,0 +1,60 @@
+{% extends 'layout.twig'%}
+{% block title %}
+<title>Ajoute tes musiques !</title>
+{% endblock %}
+{% block stylesheet %}
+<link rel="stylesheet" href="../happy_days_twig/css/form_playlist.css">
+{% endblock %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1> Ajoute ta musique
+            <small>It's so easy...</small>
+        </h1>
+        <section class="contact-wrap">
+            <form action="" method="post" id="upload" class="contact-form">
+
+                <div class="col-sm-12">
+                        <div class="input-block">
+                            <input name ="artist"placeholder="Artiste"type="text" class="form-control">
+                        </div>
+                        <div class="input-block">
+                            <input name = "title"placeholder="Titre" type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <div class="block">
+                        <select style="border:1px solid red;" class="form-control" name="id_playlist" id="playlist">
+                            <option value="id_playlist" placeholder="id_playlist">La first Playlist</option>
+                            <option value="id_playlist" placeholder="id_playlist">La second Playlist</option>
+                            <option value="id_playlist" placeholder="id_playlist">Playlist d'amour</option>
+                            <option value="id_playlist" placeholder="id_playlist">Playlist 2018</option>
+                            <option value="id_playlist" placeholder="id_playlist">Playlist de fin</option>
+                        </select>
+                    </div>
+                    <br><br>
+                </div>
+                
+                <div class="col-sm-12">
+                    <div class="input-block">
+                        <input type="file" value="{{src_url}}" class="form-control">
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <button class="square-button" type ="submit" >Ajouter</button>
+                </div>
+            </form>
+        </section>
+
+        {% block javascript %}
+            <script src="../happy_days_twig/js/form_playlist.js"></script>
+        {% endblock %}
+    </body>
+</html>
+{% endblock %}

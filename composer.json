@@ -1,0 +1,13 @@
+{
+    "name": "steph/happy_days_twig",
+    "description": "Site cloud musical",
+    "authors": [
+        {
+            "name": "stephanevieira75",
+            "email": "stephane.vieira93@outlook.fr"
+        }
+    ],
+    "require": {
+        "twig/extensions": "^1.5"
+    }
+}
